@@ -1,0 +1,11 @@
+<div>
+  <h1>User Details</h1>
+  <p>
+    Name: <%= @user.name%><br>
+    Last name: <%= @user.last_name%><br>
+    Age: <%= @user.age%><br>
+    Nationality: <%= @user.nationality%>
+  </p>
+  
+  <%= link_to '<button type="button">Create Report</button>'.html_safe, user_reports_path(@user.id), method: :post %>
+</div>
